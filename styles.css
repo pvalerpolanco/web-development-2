@@ -1,0 +1,31 @@
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 60px;
+}
