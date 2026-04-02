@@ -26,7 +26,7 @@ function Products() {
           <td>3</td>
           <td>Cucumber</td>
           <td>Vegetable</td>
-          <td>0.50</td>
+          <td>.50</td>
         </tr>
       </tbody>
     </table>
