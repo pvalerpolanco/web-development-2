@@ -1,11 +1,9 @@
-import './App.css'
-import MyNav from './MyNav'
+import './App.css';
+import MyNav from "./MyNav";
 
 function App() {
   return (
-    <div className="App">
-      <MyNav />
-    </div>
+    <MyNav />
   );
 }
 
