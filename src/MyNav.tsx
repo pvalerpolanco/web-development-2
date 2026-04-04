@@ -9,11 +9,10 @@ function MyNav() {
     <HashRouter>
       <SetNav />
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="home" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="products" element={<Products />} />
-        <Route path="form" element={<MyForm />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/form" element={<MyForm />} />
       </Routes>
     </HashRouter>
   );
@@ -23,10 +22,10 @@ function SetNav() {
   return (
     <nav>
       <ul>
-        <li><Link to="/home">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/products">Products</Link></li>
-        <li><Link to="/form">Form</Link></li>
+        <li><Link to="#">Home</Link></li>
+        <li><Link to="#/about">About</Link></li>
+        <li><Link to="#/products">Products</Link></li>
+        <li><Link to="#/form">Form</Link></li>
       </ul>
     </nav>
   );
