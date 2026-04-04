@@ -2,11 +2,11 @@ import Home from "./Home";
 import About from "./About";
 import Products from "./Products";
 import MyForm from "./MyForm";
-import { HashRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 function MyNav() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/web-development-2">
       <SetNav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -15,7 +15,7 @@ function MyNav() {
         <Route path="/products" element={<Products />} />
         <Route path="/form" element={<MyForm />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
