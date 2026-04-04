@@ -6,10 +6,9 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 function MyNav() {
   return (
-    <BrowserRouter basename="/web-development-2">
+    <BrowserRouter>
       <SetNav />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
