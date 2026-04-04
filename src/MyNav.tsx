@@ -2,20 +2,20 @@ import Home from "./Home";
 import About from "./About";
 import Products from "./Products";
 import MyForm from "./MyForm";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { HashRouter, Route, Routes, Link } from "react-router-dom";
 
 function MyNav() {
   return (
-    <BrowserRouter basename="/web-development-2">
+    <HashRouter>
       <SetNav />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/form" element={<MyForm />} />
+        <Route index element={<Home />} />
+        <Route path="home" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="products" element={<Products />} />
+        <Route path="form" element={<MyForm />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

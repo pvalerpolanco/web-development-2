@@ -6,75 +6,144 @@
   color-scheme: dark;
 }
 
-/* 2. Main layout: Centers everything on the screen */
+/* 2. Main layout */
 body {
   margin: 0;
-  display: flex;
-  justify-content: center; /* Horizontal center */
-  align-items: center;     /* Vertical center */
   min-height: 100vh;
-  background-color: #1a1a1a; /* Dark background from screenshot */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, rgba(100, 111, 255, 0.14), transparent 25%),
+    linear-gradient(180deg, #09090b 0%, #111117 100%);
   color: #ffffff;
 }
 
 #root {
   width: 100%;
-  max-width: 800px; /* Constrains the width of the form/table */
+  max-width: 760px;
   padding: 2rem;
   text-align: center;
 }
 
+.page-content {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.page-content h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.page-content p {
+  color: #d1d5db;
+  line-height: 1.8;
+  margin: 0;
+}
+
 /* 3. Navigation Styling */
 nav ul {
-  list-style-type: none; /* Removes bullet points */
+  list-style: disc inside;
   padding: 0;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
+  max-width: 240px;
+  text-align: left;
 }
 
 nav li {
-  margin: 10px 0;
+  margin: 0.75rem 0;
 }
 
 nav a {
-  color: #646cff; /* The purple-blue link color */
+  color: #7f8cff;
   text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.25s;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
 }
 
-nav a:hover {
-  color: #747bff;
+nav a:hover,
+nav a:focus {
+  color: #a1b0ff;
+}
+
+nav a.active {
+  color: #dbe2ff;
+  font-weight: 600;
 }
 
 /* 4. Table Styling (Products Page) */
 table {
   width: 100%;
-  margin: 20px auto;
+  margin: 1.5rem auto 0;
   border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 th, td {
-  padding: 15px;
+  padding: 1rem 1.25rem;
   text-align: left;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+th {
+  color: #c6d0ff;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
 }
 
 /* 5. Form Styling (Form Page) */
-/* This ensures the labels stay aligned to the left even though the page is centered */
 form {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
   text-align: left;
-  background: #242424; /* Slightly lighter grey for the form area */
+  background: rgba(255, 255, 255, 0.04);
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 label {
-  margin-top: 10px;
+  margin-top: 1rem;
   display: block;
+  color: #d1d5db;
+}
+
+.btn-primary {
+  background-color: #5f7cff;
+  border-color: #5f7cff;
+}
+
+.btn-primary:hover {
+  background-color: #7b8fff;
+  border-color: #7b8fff;
 }
 
 .input-group-text {
-  background-color: #333;
-  color: white;
-  border: 1px solid #444;
+  background-color: #18181b;
+  color: #f8fafc;
+  border: 1px solid #27272a;
+}
+
+.form-control,
+.form-select {
+  background: #14141a;
+  color: #f8fafc;
+  border: 1px solid #27272a;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.15rem rgba(100, 111, 255, 0.25);
+  border-color: #5f7cff;
 }
