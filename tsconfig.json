@@ -22,10 +22,10 @@
     "types": ["vite/client"]
   },
   "include": [
-    "src",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.d.ts"
+    "web2project/src",
+    "web2project/src/**/*.ts",
+    "web2project/src/**/*.tsx",
+    "web2project/src/**/*.d.ts"
   ],
   "exclude": [
     "node_modules",
