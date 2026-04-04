@@ -4,7 +4,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 
 function MyForm() {
     return (
-       <Form className='w-50 mx-auto'>
+       <Form> {/* Removed w-50 to let CSS handle it */}
            <Form.Group className="mb-3">
                <Form.Label>Product Name</Form.Label>
                <Form.Control placeholder="Enter name" />
