@@ -1,19 +1,80 @@
+/* index.css */
+
+/* 1. Set the dark theme and font */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: dark;
 }
 
+/* 2. Main layout: Centers everything on the screen */
 body {
   margin: 0;
-  min-width: 320px;
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
   min-height: 100vh;
-  background: #000;
-  color: #fff;
+  background-color: #1a1a1a; /* Dark background from screenshot */
+  color: #ffffff;
 }
 
-a {
-  color: #61dafb;
+#root {
+  width: 100%;
+  max-width: 800px; /* Constrains the width of the form/table */
+  padding: 2rem;
+  text-align: center;
 }
 
-* {
-  box-sizing: border-box;
+/* 3. Navigation Styling */
+nav ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+nav li {
+  margin: 10px 0;
+}
+
+nav a {
+  color: #646cff; /* The purple-blue link color */
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.25s;
+}
+
+nav a:hover {
+  color: #747bff;
+}
+
+/* 4. Table Styling (Products Page) */
+table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+/* 5. Form Styling (Form Page) */
+/* This ensures the labels stay aligned to the left even though the page is centered */
+form {
+  text-align: left;
+  background: #242424; /* Slightly lighter grey for the form area */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+}
+
+.input-group-text {
+  background-color: #333;
+  color: white;
+  border: 1px solid #444;
 }
