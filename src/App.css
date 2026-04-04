@@ -3,6 +3,53 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.product-list {
+  list-style: disc inside;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+.product-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.product-name {
+  font-weight: 700;
+}
+
+.product-type,
+.product-cost {
+  display: inline-block;
+  margin-left: 1rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .logo {
