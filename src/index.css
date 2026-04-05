@@ -1,44 +1,39 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: dark;
 }
 
 body {
   margin: 0;
+  background-color: #0d1117; /* Dark GitHub-style background */
+  color: #e6edf3;
   display: flex;
-  justify-content: center;
-  padding-top: 50px;
+  justify-content: center; /* Horizontal center */
+  padding-top: 60px;
   min-height: 100vh;
-  background-color: #121212; /* Deep dark background */
-  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 #root {
-  width: 100%;
-  max-width: 800px;
-  text-align: center;
-}
-
-/* Navigation: Centered Bullet List */
-nav {
   display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+  flex-direction: column;
+  align-items: center; /* Centers the list and the card */
+  width: 100%;
 }
 
+/* --- Navigation: Vertical Bulleted List --- */
 nav ul {
-  display: inline-block;
-  text-align: left; /* Aligns text next to bullets */
-  list-style-type: disc; /* Forces bullets to show */
+  list-style-type: disc !important; /* Standard bullets */
   padding-left: 20px;
+  margin-bottom: 40px;
+  text-align: left; /* Aligns text to the right of the bullet */
 }
 
 nav li {
-  margin-bottom: 8px;
+  margin: 10px 0;
 }
 
 nav a {
-  color: #7d85f5;
+  color: #58a6ff; /* Blue links from screenshot */
   text-decoration: none;
   font-size: 1.1rem;
 }
@@ -47,16 +42,25 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Card Styling for Products and Form */
+/* --- Card Containers for Form and Products --- */
 .table-container, form {
-  background-color: #1e1e1e;
+  background-color: #161b22; /* Darker card color */
   padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  margin-top: 20px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  width: 100%;
+  max-width: 500px; /* Constrains the width like the screenshots */
+  text-align: left;
 }
 
-/* Table styling */
+/* Form Spacing */
+.form-label {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+/* Table Styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -64,9 +68,11 @@ table {
 
 th {
   color: #7d85f5;
-  padding-bottom: 15px;
+  text-align: left;
+  padding-bottom: 10px;
 }
 
 td {
-  padding: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #21262d;
 }
