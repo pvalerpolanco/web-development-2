@@ -1,11 +1,7 @@
 function About() {
   return (
-    <div className="page-content">
+    <div className="About">
       <h1>About</h1>
-      <p>
-        This project demonstrates a React product list and form using navigation, routing,
-        and a clean dark UI.
-      </p>
     </div>
   );
 }
