@@ -1,16 +1,13 @@
-:root {
-  color-scheme: dark;
-}
+:root { color-scheme: dark; }
 
 body {
   margin: 0;
-  background-color: #0d1117; /* Dark background */
+  background-color: #0d1117;
   color: white;
   display: flex;
   justify-content: center;
   padding-top: 60px;
   min-height: 100vh;
-  font-family: sans-serif;
 }
 
 #root {
@@ -20,16 +17,12 @@ body {
   width: 100%;
 }
 
-/* --- The Vertical Bullet List --- */
+/* --- Vertical Bullet List --- */
 nav ul {
-  list-style-type: disc !important; /* Standard bullets */
+  list-style-type: disc !important;
   padding-left: 20px;
   margin-bottom: 30px;
   text-align: left;
-}
-
-nav li {
-  margin: 10px 0;
 }
 
 nav a {
@@ -37,13 +30,13 @@ nav a {
   text-decoration: none;
 }
 
-/* --- The Card Containers --- */
+/* --- Card Styles --- */
 .table-container, form {
   background-color: #161b22;
   padding: 30px;
   border-radius: 12px;
   border: 1px solid #30363d;
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-  width: 100%;
   max-width: 500px;
+  width: 100%;
 }
